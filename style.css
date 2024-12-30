@@ -109,30 +109,63 @@ footer p:last-child {
 .styled-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(0, 0, 0, 0.5); /* 50% black background */
-  color: white; /* White text for contrast */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker black background for table */
+  color: #f5f5f5; /* Off-white text for better contrast */
+  font-family: Arial, sans-serif; /* Modern font */
+  text-align: center; /* Center-align text */
+  overflow-x: auto; /* Allow scrolling on smaller screens */
 }
 
 /* Header row styling */
 .styled-table thead th {
-  background-color: rgba(0, 0, 0, 0.7); /* Darker black for headers */
-  color: white;
-  padding: 10px;
-  border: 1px solid white;
+  background-color: #333; /* Dark grey for header row */
+  color: #ffcc00; /* Yellow text for headers */
+  padding: 12px;
+  border-bottom: 2px solid #ffcc00; /* Subtle yellow underline */
+  text-transform: uppercase; /* Uppercase for headers */
+  font-weight: bold; /* Bold font for emphasis */
 }
 
 /* Table rows styling */
 .styled-table tbody tr {
-  border: 1px solid white;
-}
-
-.styled-table tbody td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle divider between rows */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 /* Zebra striping for rows */
 .styled-table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1); /* Light overlay for even rows */
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle zebra striping */
+}
+
+/* Hover effect for rows */
+.styled-table tbody tr:hover {
+  background-color: rgba(255, 255, 0, 0.1); /* Yellow overlay on hover */
+}
+
+/* Table cells styling */
+.styled-table tbody td {
+  padding: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2); /* Subtle vertical dividers */
+}
+
+.styled-table tbody td:last-child {
+  border-right: none; /* Remove border from the last column */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .styled-table {
+    display: block; /* Allow scrolling for smaller screens */
+    overflow-x: auto;
+  }
+
+  .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td, .styled-table tr {
+    display: block; /* Stack cells vertically on small screens */
+  }
+
+  .styled-table tbody td {
+    text-align: left; /* Align text left for better readability */
+    border: none; /* Remove borders for a cleaner mobile view */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
 }
