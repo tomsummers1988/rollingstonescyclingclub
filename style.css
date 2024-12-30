@@ -1,0 +1,138 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: black;
+    background-image: url('/rollingstonescyclingclub/images/backgroundblackandyellow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 100px 0 100px 0; /* Combines top and bottom margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 60px; /* Adjust for header height */
+    padding-bottom: 60px; /* Adjust for footer height */
+  }
+
+
+.login-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  background-color: solid black;
+}
+
+.login-container input, .login-container button {
+  background-color: black; /* Fixed from "solid black" */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: black; /* Fixed from "solid black" */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  padding: 10px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #111;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p:first-child {
+  text-align: left;
+}
+
+footer p:last-child {
+  text-align: right;
+}
+
+/* General table styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black background */
+  color: white; /* White text for contrast */
+}
+
+/* Header row styling */
+.styled-table thead th {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker black for headers */
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+/* Table rows styling */
+.styled-table tbody tr {
+  border: 1px solid white;
+}
+
+.styled-table tbody td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+/* Zebra striping for rows */
+.styled-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Light overlay for even rows */
+}
