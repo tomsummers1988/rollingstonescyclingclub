@@ -9,7 +9,6 @@ body {
     background-repeat: no-repeat;
     margin: 100px 0 100px 0; /* Combines top and bottom margin */
     display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     padding: 0;
@@ -18,6 +17,8 @@ body {
     box-sizing: border-box;
     padding-top: 60px; /* Adjust for header height */
     padding-bottom: 60px; /* Adjust for footer height */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Start content at the top */
   }
 
 
@@ -114,6 +115,8 @@ footer p:last-child {
   font-family: Arial, sans-serif; /* Modern font */
   text-align: center; /* Center-align text */
   overflow-x: auto; /* Allow scrolling on smaller screens */
+  display: table; /* Default table layout */
+  overflow-x: auto; /* Horizontal scroll for small screens */
 }
 
 /* Header row styling */
@@ -168,4 +171,50 @@ footer p:last-child {
     border: none; /* Remove borders for a cleaner mobile view */
     padding: 8px; /* Adjust padding for smaller screens */
   }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: left;
+    padding: 20px; /* Reduce padding */
+    margin: 0; /* Remove extra margins */
+    background-size: contain; /* Ensure the background fits */
+  }
+
+  .login-container {
+    width: 100%; /* Expand to full width */
+    padding: 15px; /* Reduce padding */
+    box-shadow: none; /* Simplify design for smaller screens */
+  }
+
+  header, footer {
+    padding: 5px; /* Reduce padding for header and footer */
+    font-size: 14px; /* Make text smaller */
+  }
+
+  header li {
+    float: none; /* Stack navigation items */
+    text-align: center;
+  }
+
+  header li a {
+    padding: 10px; /* Reduce padding for nav links */
+  }
+
+  .styled-table {
+    display: block;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    font-size: 12px; /* Reduce text size */
+  }
+
+  .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td {
+    display: block; /* Stack rows */
+    width: 100%; /* Ensure full width */
+  }
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 20px; /* Add some padding for visual spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
 }
