@@ -20,8 +20,7 @@ body {
       flex-direction: column; /* Stack content vertically */
       justify-content: flex-start; /* Start content at the top */
     }
-   
-  
+     
   .login-container {
     background-color: black;
     color: white;
@@ -212,7 +211,7 @@ body {
       display: block; /* Stack rows */
       width: 100%; /* Ensure full width */
     }
-  }
+  
    
   main {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
