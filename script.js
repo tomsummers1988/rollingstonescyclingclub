@@ -12,27 +12,45 @@ form.addEventListener('submit', (event) => {
     console.log('Password:', password);
 });
 
-function sortTable(columnIndex) {
-    const table = document.getElementById("resultsTable");
-    const rows = Array.from(table.rows).slice(1); // Get all rows except the header
-    const isTimeColumn = columnIndex === 5; // Check if it's the Time column
+function sortTable(n) {
+  let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("resultsTable");
+  switching = true;
+  dir = "asc"; // Default sorting direction
 
-    rows.sort((row1, row2) => {
-      const cell1 = row1.cells[columnIndex].textContent.trim();
-      const cell2 = row2.cells[columnIndex].textContent.trim();
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
 
-      // Handle Time column sorting
-      if (isTimeColumn) {
-        const time1 = cell1.split(":").reduce((acc, time) => 60 * acc + +time, 0);
-        const time2 = cell2.split(":").reduce((acc, time) => 60 * acc + +time, 0);
-        return time1 - time2;
+      // Check if values are numeric for proper sorting
+      let xValue = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() : Number(x.innerHTML);
+      let yValue = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() : Number(y.innerHTML);
+
+      if (dir == "asc") {
+        if (xValue > yValue) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (xValue < yValue) {
+          shouldSwitch = true;
+          break;
+        }
       }
-
-      // Handle numerical sorting
-      return parseFloat(cell1) - parseFloat(cell2);
-    });
-
-    // Reinsert sorted rows back into the table
-    const tbody = table.tBodies[0];
-    rows.forEach(row => tbody.appendChild(row));
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+            if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
   }
+}
