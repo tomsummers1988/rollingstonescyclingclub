@@ -218,3 +218,8 @@ main {
   padding: 20px; /* Add some padding for visual spacing */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
+
+ul li {
+  margin-bottom: 10px; /* Example: 10 pixels of spacing */
+  line-height: 1.4;
+}
