@@ -119,38 +119,7 @@ footer p:last-child {
   border-right: none; /* Remove border from the last column */
 }
  
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  body {
-    text-align: left;
-    padding: 20px; /* Reduce padding */
-    margin: 0; /* Remove extra margins */
-    background-size: contain; /* Ensure the background fits */
-    overflow-x: auto;
-    display: block;
-  }
- 
-  .styled-table {
-    display: block; /* Allow scrolling for smaller screens */
-    overflow-x: auto;
-  }
- 
-  .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td, .styled-table tr {
-    display: block; /* Stack cells vertically on small screens */
-  }
- 
-  .styled-table tbody td {
-    text-align: left; /* Align text left for better readability */
-    border: none; /* Remove borders for a cleaner mobile view */
-    padding: 8px; /* Adjust padding for smaller screens */
-  }
-}
- 
-  .login-container {
-    width: 100%; /* Expand to full width */
-    padding: 15px; /* Reduce padding */
-    box-shadow: none; /* Simplify design for smaller screens */
-  }
+
  
   header, footer {
     padding: 5px; /* Reduce padding for header and footer */
@@ -165,18 +134,7 @@ footer p:last-child {
   header li a {
     padding: 10px; /* Reduce padding for nav links */
   }
- 
-  .styled-table {
-    display: block;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    font-size: 12px; /* Reduce text size */
-  }
- 
-  .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td {
-    display: block; /* Stack rows */
-    width: 100%; /* Ensure full width */
-  }
- 
+  
 main {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
   padding: 20px; /* Add some padding for visual spacing */
