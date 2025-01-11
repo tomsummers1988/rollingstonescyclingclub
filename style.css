@@ -218,3 +218,15 @@ main {
   padding: 20px; /* Add some padding for visual spacing */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
+
+.chart-container {
+  margin-top: 20px; /* Adds padding between the table and the chart */
+  padding: 10px; /* Adds internal padding around the chart */
+  background-color: #f9f9f9; /* Matches the website's style */
+  border: 1px solid #ddd; /* Light border for consistency */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 90%; /* Ensures it fits nicely on most screens */
+  margin-left: auto;
+  margin-right: auto; /* Centres the chart */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
