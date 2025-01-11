@@ -20,86 +20,53 @@
     <main>
         <h1>The 2025 Tour de Zwift</h1>
         <section>
-            <h2>Stage 1 Long - Makuri 40</h2>
+            <h2>Stage 1 A, B & C</h2>
             
             <table id="resultsTable" class="styled-table">
-                <thead>
-                  <tr>
-                    <th>Position</th>
-                    <th>Name</th>
-                    <th onclick="sortTable(2)" class="sortable">Sprint 1 <span class="sort-icon">▲▼</span></th>
-                    <th onclick="sortTable(3)" class="sortable">Sprint 2 <span class="sort-icon">▲▼</span></th>
-                    <th onclick="sortTable(4)" class="sortable">Sprint 3 <span class="sort-icon">▲▼</span></th>
-                    <th onclick="sortTable(5)" class="sortable">Time <span class="sort-icon">▲▼</span></th>
-                    <th>Time Gap</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Miles Fisher</td>
-                    <td>15.792</td>
-                    <td>27.559</td>
-                    <td>24.462</td>
-                    <td>00:55:20</td>
-                    <td>00:00:00</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Pete Sellars</td>
-                    <td>16.023</td>
-                    <td>26.577</td>
-                    <td>25.463</td>
-                    <td>00:56:19</td>
-                    <td>00:00:59</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Nick Plummer</td>
-                    <td>13.672</td>
-                    <td>24.266</td>
-                    <td>20.916</td>
-                    <td>00:58:35</td>
-                    <td>00:03:15</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Mike Little</td>
-                    <td>15.276</td>
-                    <td>26.036</td>
-                    <td>29.318</td>
-                    <td>01:00:18</td>
-                    <td>00:04:58</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Dave Gunn</td>
-                    <td>15.659</td>
-                    <td>23.825</td>
-                    <td>34.188</td>
-                    <td>01:00:50</td>
-                    <td>00:05:30</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Richard Kirkdale</td>
-                    <td>16.127</td>
-                    <td>28.178</td>
-                    <td>32.285</td>
-                    <td>01:03:36</td>
-                    <td>00:08:16</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Delme Luff</td>
-                    <td>16.765</td>
-                    <td>25.665</td>
-                    <td>32.597</td>
-                    <td>01:03:38</td>
-                    <td>00:08:18</td>
-                  </tr>
-                </tbody>
-              </table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th onclick="sortTable(1)" class="sortable">Sprint 1 <span class="sort-icon">▲▼</span></th>
+                  <th onclick="sortTable(2)" class="sortable">Sprint 2 <span class="sort-icon">▲▼</span></th>
+                  <th onclick="sortTable(3)" class="sortable">Sprint 3 <span class="sort-icon">▲▼</span></th>
+                  <th onclick="sortTable(4)" class="sortable">A Time <span class="sort-icon">▲▼</span></th>
+                  <th>A Gap</th>
+                  <th onclick="sortTable(6)" class="sortable">B Time <span class="sort-icon">▲▼</span></th>
+                  <th>B Gap</th>
+                  <th onclick="sortTable(8)" class="sortable">C Time <span class="sort-icon">▲▼</span></th>
+                  <th>C Gap</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Miles Fisher</td><td>15.792</td><td>27.559</td><td>24.462</td><td>00:55:20</td><td>00:00:00</td><td>00:34:26</td><td>00:00:00</td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Pete Sellars</td><td>16.023</td><td>26.577</td><td>25.463</td><td>00:56:19</td><td>00:00:59</td><td>00:35:43</td><td>00:01:17</td><td>00:18:36</td><td>00:01:01</td>
+                </tr>
+                <tr>
+                  <td>Nick Plummer</td><td>13.672</td><td>24.266</td><td>20.916</td><td>00:58:35</td><td>00:03:15</td><td>00:37:22</td><td>00:02:56</td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Mike Little</td><td>15.276</td><td>26.036</td><td>29.318</td><td>01:00:18</td><td>00:04:58</td><td>00:36:42</td><td>00:02:16</td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Dave Gunn</td><td>15.659</td><td>23.825</td><td>34.188</td><td>01:00:50</td><td>00:05:30</td><td>00:36:49</td><td>00:02:23</td><td>00:18:57</td><td>00:01:22</td>
+                </tr>
+                <tr>
+                  <td>Richard Kirkdale</td><td>16.127</td><td>28.178</td><td>32.285</td><td>01:03:36</td><td>00:08:16</td><td>00:37:21</td><td>00:02:55</td><td>00:19:00</td><td>00:01:25</td>
+                </tr>
+                <tr>
+                  <td>Delme Luff</td><td>16.765</td><td>25.665</td><td>32.597</td><td>01:03:38</td><td>00:08:18</td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Pete Freeman</td><td></td><td></td><td></td><td></td><td></td><td>00:38:57</td><td>00:04:31</td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>Alex Norris</td><td>15.258</td><td>27.275</td><td>24.37</td><td>00:59:22</td><td>00:04:02</td><td></td><td></td><td>00:17:35</td><td>00:00:00</td>
+                </tr>
+              </tbody>
+            </table>
                
         </section>
     </main>
