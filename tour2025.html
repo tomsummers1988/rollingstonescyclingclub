@@ -69,70 +69,68 @@
                   <td>Alex Norris</td><td>15.258</td><td>27.275</td><td>24.37</td><td>00:59:22</td><td>00:04:02</td><td></td><td></td><td>00:17:35</td><td>00:00:00</td>
                 </tr>
               </tbody>
-            </table>
-               
+            </table>     
         </section>
+
+        <section>
+          <div id="vis"></div>
+          <script>
+            var spec = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "data": {
+                "values": [
+                  {"Name": "Miles Fisher", "variable": "Sprint 1", "value": 15.792},
+                  {"Name": "Pete Sellars", "variable": "Sprint 1", "value": 16.023},
+                  {"Name": "Nick Plummer", "variable": "Sprint 1", "value": 13.672},
+                  {"Name": "Mike Little", "variable": "Sprint 1", "value": 15.276},
+                  {"Name": "Dave Gunn", "variable": "Sprint 1", "value": 15.659},
+                  {"Name": "Richard Kirkdale", "variable": "Sprint 1", "value": 16.127},
+                  {"Name": "Delme Luff", "variable": "Sprint 1", "value": 16.765},
+                  {"Name": "Pete Freeman", "variable": "Sprint 1", "value": null},
+                  {"Name": "Alex Norris", "variable": "Sprint 1", "value": 15.258},
+                  {"Name": "Miles Fisher", "variable": "Sprint 2", "value": 27.559},
+                  {"Name": "Pete Sellars", "variable": "Sprint 2", "value": 26.577},
+                  {"Name": "Nick Plummer", "variable": "Sprint 2", "value": 24.266},
+                  {"Name": "Mike Little", "variable": "Sprint 2", "value": 26.036},
+                  {"Name": "Dave Gunn", "variable": "Sprint 2", "value": 23.825},
+                  {"Name": "Richard Kirkdale", "variable": "Sprint 2", "value": 28.178},
+                  {"Name": "Delme Luff", "variable": "Sprint 2", "value": 25.665},
+                  {"Name": "Pete Freeman", "variable": "Sprint 2", "value": null},
+                  {"Name": "Alex Norris", "variable": "Sprint 2", "value": 27.275},
+                  {"Name": "Miles Fisher", "variable": "Sprint 3", "value": 24.462},
+                  {"Name": "Pete Sellars", "variable": "Sprint 3", "value": 25.463},
+                  {"Name": "Nick Plummer", "variable": "Sprint 3", "value": 20.916},
+                  {"Name": "Mike Little", "variable": "Sprint 3", "value": 29.318},
+                  {"Name": "Dave Gunn", "variable": "Sprint 3", "value": 34.188},
+                  {"Name": "Richard Kirkdale", "variable": "Sprint 3", "value": 32.285},
+                  {"Name": "Delme Luff", "variable": "Sprint 3", "value": 32.597},
+                  {"Name": "Pete Freeman", "variable": "Sprint 3", "value": null},
+                  {"Name": "Alex Norris", "variable": "Sprint 3", "value": 24.37}
+                ]
+              },
+              "title": "Sprints Distribution",
+              "mark": "circle",
+              "encoding": {
+                "x": {"field": "Name", "type": "nominal", "title": "Name", "axis": {"labelAngle": -45}},
+                "y": {"field": "value", "type": "quantitative", "title": "Time"},
+                "color": {"field": "variable"},
+                "tooltip": [
+                  {"field": "Name", "type": "nominal"},
+                  {"field": "value", "type": "quantitative"},
+                  {"field": "variable", "type": "nominal"}
+                ]
+              }
+            };
+            vegaEmbed('#vis', spec).then(function(result) {
+              // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+          </script>
+        </section>
+
     </main>
 
     <script src="/rollingstonescyclingclub/script.js"></script>
-
-<section>
-
-  <div id="vis"></div>
-  <script>
-    var spec = {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": {
-        "values": [
-          {"Name": "Miles Fisher", "variable": "Sprint 1", "value": 15.792},
-          {"Name": "Pete Sellars", "variable": "Sprint 1", "value": 16.023},
-          {"Name": "Nick Plummer", "variable": "Sprint 1", "value": 13.672},
-          {"Name": "Mike Little", "variable": "Sprint 1", "value": 15.276},
-          {"Name": "Dave Gunn", "variable": "Sprint 1", "value": 15.659},
-          {"Name": "Richard Kirkdale", "variable": "Sprint 1", "value": 16.127},
-          {"Name": "Delme Luff", "variable": "Sprint 1", "value": 16.765},
-          {"Name": "Pete Freeman", "variable": "Sprint 1", "value": null},
-          {"Name": "Alex Norris", "variable": "Sprint 1", "value": 15.258},
-          {"Name": "Miles Fisher", "variable": "Sprint 2", "value": 27.559},
-          {"Name": "Pete Sellars", "variable": "Sprint 2", "value": 26.577},
-          {"Name": "Nick Plummer", "variable": "Sprint 2", "value": 24.266},
-          {"Name": "Mike Little", "variable": "Sprint 2", "value": 26.036},
-          {"Name": "Dave Gunn", "variable": "Sprint 2", "value": 23.825},
-          {"Name": "Richard Kirkdale", "variable": "Sprint 2", "value": 28.178},
-          {"Name": "Delme Luff", "variable": "Sprint 2", "value": 25.665},
-          {"Name": "Pete Freeman", "variable": "Sprint 2", "value": null},
-          {"Name": "Alex Norris", "variable": "Sprint 2", "value": 27.275},
-          {"Name": "Miles Fisher", "variable": "Sprint 3", "value": 24.462},
-          {"Name": "Pete Sellars", "variable": "Sprint 3", "value": 25.463},
-          {"Name": "Nick Plummer", "variable": "Sprint 3", "value": 20.916},
-          {"Name": "Mike Little", "variable": "Sprint 3", "value": 29.318},
-          {"Name": "Dave Gunn", "variable": "Sprint 3", "value": 34.188},
-          {"Name": "Richard Kirkdale", "variable": "Sprint 3", "value": 32.285},
-          {"Name": "Delme Luff", "variable": "Sprint 3", "value": 32.597},
-          {"Name": "Pete Freeman", "variable": "Sprint 3", "value": null},
-          {"Name": "Alex Norris", "variable": "Sprint 3", "value": 24.37}
-        ]
-      },
-      "title": "Sprints Distribution",
-      "mark": "circle",
-      "encoding": {
-        "x": {"field": "Name", "type": "nominal", "title": "Name", "axis": {"labelAngle": -45}},
-        "y": {"field": "value", "type": "quantitative", "title": "Time"},
-        "color": {"field": "variable"},
-        "tooltip": [
-          {"field": "Name", "type": "nominal"},
-          {"field": "value", "type": "quantitative"},
-          {"field": "variable", "type": "nominal"}
-        ]
-      }
-    };
-    vegaEmbed('#vis', spec).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-  </script>
-
-</section>
-
+    
     <footer>
         <p style="text-align: left;">Copyright &copy; 2025 Rolling Stones Cycling Club</p>
         <p style="text-align: right;">"Settle in at FTP plus 10%"</p>
