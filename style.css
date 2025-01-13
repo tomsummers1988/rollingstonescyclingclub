@@ -19,6 +19,7 @@ body {
   padding-bottom: 60px; /* Adjust for footer height */
   flex-direction: column; /* Stack content vertically */
   justify-content: flex-start; /* Start content at the top */
+  overflow-x: auto;
 }
 
 
@@ -164,6 +165,9 @@ footer p:last-child {
 
 /* Table cells styling */
 .styled-table tbody td {
+  width: 100px; /* Or adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
   padding: 12px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   /* Subtle vertical dividers */
@@ -243,10 +247,12 @@ footer p:last-child {
 
   .styled-table {
     display: block;
+    max-width: 100%;
     overflow-x: auto;
     /* Enable horizontal scrolling */
     font-size: 12px;
     /* Reduce text size */
+    table-layout: fixed;
   }
 
   .styled-table thead,
