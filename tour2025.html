@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>2025 Tour</title>
-    <link rel="stylesheet" href="/rollingstonescyclingclub//style.css">
+    <link rel="stylesheet" href="/rollingstonescyclingclub/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -30,25 +30,15 @@
             <tr style="text-align: right;">
               <th>Pos.</th>
               <th>Name</th>
-              <th onclick="sortTable(2, 'LeaderboardTable')" class="sortable">Green Points <span class="sort-icon">▲▼</span></th>
-              <th onclick="sortTable(3, 'LeaderboardTable')" class="sortable">Polka Points <span class="sort-icon">▲▼</span></th>
-              <th onclick="sortTable(4, 'LeaderboardTable')" class="sortable">Duo Time <span class="sort-icon">▲▼</span></th>
-              <th onclick="sortTable(5, 'LeaderboardTable')" class="sortable">Duo Gap <span class="sort-icon">▲▼</span></th>
-              <th onclick="sortTable(6, 'LeaderboardTable')" class="sortable">Trio Time <span class="sort-icon">▲▼</span></th>
-              <th onclick="sortTable(7, 'LeaderboardTable')" class="sortable">Trip Gap <span class="sort-icon">▲▼</span></th>
+              <th>Green Points</th>
+              <th>Polka Points</th>
+              <th>Duo Time</th>
+              <th>Duo Gap</th>
+              <th>Trio Time</th>
+              <th>Trip Gap</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>3</td>
-              <td>Alex Norris</td>
-              <td>10</td>
-              <td>6</td>
-              <td>01:34:02</td>
-              <td>00:04:16</td>
-              <td>01:51:37</td>
-              <td>00:03:35</td>
-            </tr>
             <tr>
               <td>1</td>
               <td>Mark Barley</td>
@@ -57,36 +47,6 @@
               <td>01:30:39</td>
               <td>00:00:53</td>
               <td>01:48:02</td>
-              <td>00:00:00</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Miles Fisher</td>
-              <td>4</td>
-              <td>2</td>
-              <td>01:29:46</td>
-              <td>00:00:00</td>
-              <td>00:00:00</td>
-              <td>00:00:00</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Dave Gunn</td>
-              <td>12</td>
-              <td>0</td>
-              <td>01:37:39</td>
-              <td>00:07:53</td>
-              <td>01:56:36</td>
-              <td>00:08:34</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Nick Plummer</td>
-              <td>25</td>
-              <td>0</td>
-              <td>01:35:57</td>
-              <td>00:06:11</td>
-              <td>00:00:00</td>
               <td>00:00:00</td>
             </tr>
             <tr>
@@ -100,14 +60,14 @@
               <td>00:02:36</td>
             </tr>
             <tr>
+              <td>3</td>
+              <td>Alex Norris</td>
+              <td>10</td>
               <td>6</td>
-              <td>Tom Summers</td>
-              <td>0</td>
-              <td>0</td>
-              <td>01:41:03</td>
-              <td>00:11:17</td>
-              <td>01:59:14</td>
-              <td>00:11:12</td>
+              <td>01:34:02</td>
+              <td>00:04:16</td>
+              <td>01:51:37</td>
+              <td>00:03:35</td>
             </tr>
             <tr>
               <td>4</td>
@@ -120,14 +80,24 @@
               <td>00:07:03</td>
             </tr>
             <tr>
-              <td>11</td>
-              <td>Pete Freeman</td>
+              <td>5</td>
+              <td>Dave Gunn</td>
+              <td>12</td>
+              <td>0</td>
+              <td>01:37:39</td>
+              <td>00:07:53</td>
+              <td>01:56:36</td>
+              <td>00:08:34</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Tom Summers</td>
               <td>0</td>
               <td>0</td>
-              <td>01:44:47</td>
-              <td>00:15:01</td>
-              <td>00:00:00</td>
-              <td>00:00:00</td>
+              <td>01:41:03</td>
+              <td>00:11:17</td>
+              <td>01:59:14</td>
+              <td>00:11:12</td>
             </tr>
             <tr>
               <td>7</td>
@@ -146,6 +116,36 @@
               <td>0</td>
               <td>01:43:15</td>
               <td>00:13:29</td>
+              <td>00:00:00</td>
+              <td>00:00:00</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Miles Fisher</td>
+              <td>4</td>
+              <td>2</td>
+              <td>01:29:46</td>
+              <td>00:00:00</td>
+              <td>00:00:00</td>
+              <td>00:00:00</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Nick Plummer</td>
+              <td>25</td>
+              <td>0</td>
+              <td>01:35:57</td>
+              <td>00:06:11</td>
+              <td>00:00:00</td>
+              <td>00:00:00</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Pete Freeman</td>
+              <td>0</td>
+              <td>0</td>
+              <td>01:44:47</td>
+              <td>00:15:01</td>
               <td>00:00:00</td>
               <td>00:00:00</td>
             </tr>
