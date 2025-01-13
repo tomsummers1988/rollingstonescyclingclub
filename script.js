@@ -12,15 +12,16 @@ form.addEventListener('submit', (event) => {
     console.log('Password:', password);
 });
 
-function sortTable(n) {
+function sortTable(n, tableId) {
   let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("resultsTable");
+  table = document.getElementById(tableId);
   switching = true;
   dir = "asc"; // Default sorting direction
 
   while (switching) {
     switching = false;
     rows = table.rows;
+
     for (i = 1; i < (rows.length - 1); i++) {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[n];
@@ -30,12 +31,12 @@ function sortTable(n) {
       let xValue = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() : Number(x.innerHTML);
       let yValue = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() : Number(y.innerHTML);
 
-      if (dir == "asc") {
+      if (dir === "asc") {
         if (xValue > yValue) {
           shouldSwitch = true;
           break;
         }
-      } else if (dir == "desc") {
+      } else if (dir === "desc") {
         if (xValue < yValue) {
           shouldSwitch = true;
           break;
@@ -47,7 +48,7 @@ function sortTable(n) {
       switching = true;
       switchcount++;
     } else {
-            if (switchcount == 0 && dir == "asc") {
+      if (switchcount === 0 && dir === "asc") {
         dir = "desc";
         switching = true;
       }
