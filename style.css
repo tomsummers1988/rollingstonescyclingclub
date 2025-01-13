@@ -7,7 +7,7 @@ body {
   background-image: url('/rollingstonescyclingclub/images/backgroundblackandyellow.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 100px 0 100px 0; /* Combines top and bottom margin */
+  /* Combines top and bottom margin */
   display: flex;
   align-items: center;
   color: white;
@@ -15,13 +15,13 @@ body {
   min-height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 60px; /* Adjust for header height */
-  padding-bottom: 60px; /* Adjust for footer height */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: flex-start; /* Start content at the top */
-  overflow-x: auto;
+  /* Adjust for header height */
+  /* Adjust for footer height */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: flex-start;
+  /* Start content at the top */
 }
-
 
 .login-container {
   background-color: black;
@@ -122,10 +122,6 @@ footer p:last-child {
   /* Modern font */
   text-align: center;
   /* Center-align text */
-  overflow-x: auto;
-  /* Allow scrolling on smaller screens */
-  display: table;
-  /* Default table layout */
 }
 
 /* Header row styling */
@@ -165,9 +161,6 @@ footer p:last-child {
 
 /* Table cells styling */
 .styled-table tbody td {
-  width: 100px; /* Or adjust as needed */
-  overflow: hidden;
-  text-overflow: ellipsis; /* Add ellipsis for truncated text */
   padding: 12px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   /* Subtle vertical dividers */
@@ -184,7 +177,7 @@ footer p:last-child {
     display: block;
     /* Allow scrolling for smaller screens */
     overflow-x: auto;
-    white-space: nowrap; /* Prevents cells from wrapping */
+    white-space: nowrap;
   }
 
   .styled-table thead,
@@ -215,6 +208,8 @@ footer p:last-child {
     /* Remove extra margins */
     background-size: contain;
     /* Ensure the background fits */
+    overflow-x: auto;
+    /* Enable horizontal scrolling on the body */
   }
 
   .login-container {
@@ -247,12 +242,8 @@ footer p:last-child {
 
   .styled-table {
     display: block;
-    max-width: 100%;
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
     font-size: 12px;
     /* Reduce text size */
-    table-layout: fixed;
   }
 
   .styled-table thead,
