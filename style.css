@@ -178,6 +178,20 @@ footer p:last-child {
     /* Allow scrolling for smaller screens */
     overflow-x: auto;
     white-space: nowrap;
+    width: 100%;
+    /* Ensure table width matches the container */
+    min-width: 600px;
+    /* Set a minimum width for the table */
+  }
+
+  .styled-table-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    width: 100%;
+    /* Ensure the container fits the screen */
+    box-sizing: border-box;
   }
 
   .styled-table thead,
