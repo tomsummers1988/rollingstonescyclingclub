@@ -15,49 +15,10 @@ body {
   min-height: 100%;
   width: 100%;
   box-sizing: border-box;
-  /* Adjust for header height */
-  /* Adjust for footer height */
   flex-direction: column;
   /* Stack content vertically */
   justify-content: flex-start;
   /* Start content at the top */
-}
-
-.login-container {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  background-color: solid black;
-}
-
-.login-container input,
-.login-container button {
-  background-color: black;
-  /* Fixed from "solid black" */
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-container button {
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-form {
-  border: 1px solid black;
-  padding: 20px;
-  background-color: black;
-  /* Fixed from "solid black" */
 }
 
 header {
@@ -99,7 +60,7 @@ footer {
   background-color: black;
   color: yellow;
   text-align: center;
-  padding: 10px;
+  padding: 80px;
 }
 
 footer p:first-child {
@@ -226,26 +187,14 @@ footer p:last-child {
     /* Enable horizontal scrolling on the body */
   }
 
-  .login-container {
-    width: 100%;
-    /* Expand to full width */
-    padding: 15px;
-    /* Reduce padding */
-    box-shadow: none;
-    /* Simplify design for smaller screens */
-  }
-
-  header,
+    header,
   footer {
     padding: 5px;
-    /* Reduce padding for header and footer */
     font-size: 14px;
-    /* Make text smaller */
   }
 
   header li {
     float: none;
-    /* Stack navigation items */
     text-align: center;
   }
 
@@ -273,9 +222,9 @@ footer p:last-child {
 
 main {
   background-color: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black */
-  padding: 20px;
-  /* Add some padding for visual spacing */
+  padding: 80px;
+  margin-top: 50px; /* Match the header height */
+  margin-bottom: 40px; /* Match the footer height */
   border-radius: 10px;
   /* Optional: Add rounded corners */
 }
