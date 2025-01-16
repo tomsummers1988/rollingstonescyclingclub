@@ -7,27 +7,26 @@ body {
   background-image: url('/rollingstonescyclingclub/images/backgroundblackandyellow.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /* Combines top and bottom margin */
   display: flex;
   align-items: center;
   color: white;
-  padding: 0;
   min-height: 100%;
   width: 100%;
   box-sizing: border-box;
   flex-direction: column;
-  /* Stack content vertically */
   justify-content: flex-start;
-  /* Start content at the top */
+  padding-top: 50px; /* Adjust to match header height */
+    padding-bottom: 50px; /* Adjust to match footer height */
 }
 
 header {
   position: fixed;
+  height: 50px;
   top: 0;
   width: 100%;
   background-color: black;
   color: yellow;
-  padding: 10px;
+  padding: 20px;
 }
 
 header ul {
@@ -60,7 +59,8 @@ footer {
   background-color: black;
   color: yellow;
   text-align: center;
-  padding: 80px;
+  height: 80px;
+  padding: 40px;
 }
 
 footer p:first-child {
@@ -224,7 +224,7 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 80px;
   margin-top: 50px; /* Match the header height */
-  margin-bottom: 40px; /* Match the footer height */
+  margin-bottom: 50px; /* Match the footer height */
   border-radius: 10px;
   /* Optional: Add rounded corners */
 }
