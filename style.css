@@ -88,24 +88,19 @@ footer p:last-child {
 /* Header row styling */
 .styled-table thead th {
   background-color: #333;
-  /* Dark grey for header row */
   color: #ffcc00;
-  /* Yellow text for headers */
   padding: 12px;
   border-bottom: 2px solid #ffcc00;
-  /* Subtle yellow underline */
   text-transform: uppercase;
-  /* Uppercase for headers */
   font-weight: bold;
-  /* Bold font for emphasis */
+  font-size: 14px; /* Smaller font for headers */
 }
 
 /* Table rows styling */
 .styled-table tbody tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* Subtle divider between rows */
   transition: background-color 0.3s ease;
-  /* Smooth hover transition */
+  font-size: 12px; 
 }
 
 /* Zebra striping for rows */
@@ -161,16 +156,13 @@ footer p:last-child {
   .styled-table td,
   .styled-table tr {
     display: block;
-    /* Stack cells vertically on small screens */
+    font-size: 10px;
   }
 
   .styled-table tbody td {
     text-align: left;
-    /* Align text left for better readability */
     border: none;
-    /* Remove borders for a cleaner mobile view */
     padding: 8px;
-    /* Adjust padding for smaller screens */
   }
 }
 
