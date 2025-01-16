@@ -82,6 +82,7 @@ footer p:last-child {
   font-family: Arial, sans-serif;
   /* Modern font */
   text-align: center;
+  font-size: 12px;
   /* Center-align text */
 }
 
@@ -93,7 +94,7 @@ footer p:last-child {
   border-bottom: 2px solid #ffcc00;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px; /* Smaller font for headers */
+  font-size: 12px; /* Smaller font for headers */
 }
 
 /* Table rows styling */
@@ -156,7 +157,7 @@ footer p:last-child {
   .styled-table td,
   .styled-table tr {
     display: block;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .styled-table tbody td {
