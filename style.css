@@ -98,7 +98,6 @@ footer p:last-child {
 .styled-table tbody tr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease;
-  white-space: nowrap;
 }
 
 /* Zebra striping for rows */
